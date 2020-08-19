@@ -1,0 +1,238 @@
+@charset "UTF-8";
+
+:root {
+    --color-background: #222433ff;
+    --color-text-title: #e0e0e0;
+    --color-menu: #e28e26ff;
+	--color-hover: #e28e26ff;
+	--color-h2: #12a99bff;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+	background-color: var(--color-background);
+	color:var(--color-text-title);
+	height: 100vh;
+}
+
+body{
+	font-size: 1.6rem;
+}
+
+h1 {
+	font-size: 6rem;
+	color: #E0e0e0;
+	text-align: center;
+}
+
+h2 {
+	color: var(--color-h2);
+}
+
+div#interface {
+	width: 90%;
+	max-width: 980px;
+	margin: 20px auto 0px auto; 
+}	
+
+a {
+	color: #e28e26ff;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+#cabecalho {
+	margin: 5.0rem;
+	display: block;
+	text-align: center;
+}
+
+/* Formatação do menu */
+
+
+nav#menu ul {
+	list-style:none;
+    text-transform:none;
+    text-align: center;
+}
+
+nav#menu li {
+	display:inline-block;
+	background-color:var(--color-menu);
+	padding: 1.5rem; /*dentro do objeto*/
+	margin: 0.5rem; /*fora do objeto*/
+	margin-right: 1rem;
+    transition: background-color 1s;
+}
+
+nav#menu li:hover {
+	background-color: #e3619aff;
+}
+
+nav#menu h1 {
+	display:none;
+}
+
+nav#menu a {
+    color: var(--color-text-title);
+	text-decoration:none;
+}
+
+nav#menu a:hover{
+	color: var(--color-text-title);
+	text-decoration:none;
+}
+
+footer#rodape {
+	clear: both;
+	border-top: 2px solid #cecece;
+}
+
+footer#rodape p{
+	text-align: center;
+}
+
+
+/*imagens*/
+
+ul#album-fotos {
+	width: 70.0rem;
+	margin: 0 auto;
+	overflow: hidden;
+	list-style:none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+ul#album-fotos li{
+	width: 20.0rem;
+	height: 20.0rem;
+	margin: 10px;
+	-webkit-transition: all .4s ease-in;
+}
+
+ul#album-fotos li span{
+	opacity: 0;
+	color:#ffffff;
+	text-shadow:1px 1px 1px #000000;
+	background-color: #e3619aff;
+	font-size: 9pt;
+	line-height: 370px;
+	padding: 5px;
+}
+ul#album-fotos li:hover {
+	-webkit-transform: scale(1.5);
+}
+
+ul#album-fotos li:hover span{
+	opacity:1;
+}
+
+ul#album-fotos li#foto01 {
+	background: url('/img/nisia.png') no-repeat;
+	background-position: 50% 50%;
+	background-size: 40.0rem 40.0rem;
+	background-color: #ffffff;
+
+}
+
+ul#album-fotos li#foto01:hover {
+	background-position: 0px 0px;
+	background-size: 20.0rem 20.0rem;
+
+}
+
+ul#album-fotos li#foto02 {
+	background: url('/img/vera.png') no-repeat;
+	background-position: 50% 50%;
+	background-size: 40.0rem 40.0rem;
+	background-color: #ffffff;
+}
+
+ul#album-fotos li#foto02:hover {
+	background-position: 0px 0px;
+	background-size: 20.0rem 20.0rem;
+}
+
+ul#album-fotos li#foto03 {
+	background: url('/img/hedy.png') no-repeat;
+	background-position: 50% 50%;
+	background-size: 40.0rem 40.0rem;
+	background-color: #ffffff;
+}
+
+ul#album-fotos li#foto03:hover {
+	background-position: 0px 0px;
+	background-size: 20.0rem 20.0rem;
+}
+ul#album-fotos li#foto04 {
+	background: url('../_imagens/galeria-04.jpg') no-repeat;
+	background-position: 50% 50%;
+	background-size: 40.0rem 40.0rem;
+	background-color: #ffffff;
+}
+ul#album-fotos li#foto04:hover {
+	background-position: 0px 0px;
+	background-size: 20.0rem 20.0rem;
+}
+ul#album-fotos li#foto05 {
+	background: url('../_imagens/galeria-05.jpg') no-repeat;
+	background-position: 50% 50%;
+	background-size: 40.0rem 40.0rem;
+	background-color: #ffffff;
+}
+ul#album-fotos li#foto05:hover {
+	background-position: 0px 0px;
+	background-size: 20.0rem 20.0rem;
+}
+
+ul#album-fotos li#foto06 {
+	background: url('../_imagens/galeria-06.jpg') no-repeat;
+	background-position: 50% 50%;
+	background-size: 40.0rem 40.0rem;
+	background-color: #ffffff;
+}
+
+ul#album-fotos li#foto06:hover {
+	background-position: 0px 0px;
+	background-size: 20.0rem 20.0rem;
+}
+
+/*zine*/
+
+.fanzine img{
+	width: 90%;
+	height: 90%;
+	text-align: center;
+	
+}
+
+/* media queries */
+@media (max-width: 768px) {
+
+	html {
+		 font-size:50%;
+	 }
+
+	 ul#album-fotos {
+		width: 50%;
+		display: block;
+		text-align: center;
+	}
+
+	ul#album-fotos li{
+		width: 20.0rem;
+		height: 20.0rem;
+		margin: 10px;
+		-webkit-transition: all .4s ease-in;
+	}
+ }
+ 
